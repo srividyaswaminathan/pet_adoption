@@ -1,0 +1,21 @@
+{
+  "name": "pet_adoption",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "meadch <meadch@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MEAN-I/pet_adoption",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}

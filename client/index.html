@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='App'>
   <head>
     <meta charset="utf-8">
+    <script src='angular/angular.js'></script>
+    <script src='angular-route/angular-route.js'></script>
+    <script src='js/main.js'></script>
     <title>Pet Adoption</title>
   </head>
   <body>
-    <h1>Pet Adoption</h1>
-    <form action="/pets" method="post">
-      <h3>Create Pet</h3>
-      Name: <input type="text" name="name">
-      Breed: <input type="text" name="name">
-      <input type="submit" value="Add Pet">
-    </form>
-
-    <form action="/owners" method="post">
-      <h3>Create Owner</h3>
-      Name: <input type="text" name="name">
-      <input type="submit" value="Add Pet">
-    </form>
+    <ul>
+      <li><a href="#/main">Main</a></li>
+      <li><a href="#/edit">Edit</a></li>
+      <li><a href="#/new">New</a></li>
+      <li><a href="#/show">Show</a></li>
+    </ul>
+    <div ng-view></div>
   </body>
 </html>
