@@ -1,6 +1,5 @@
 <h1>MAIN</h1>
 <div ng-repeat='pet in pets'>
-	{{pets}}
-	<p>{{pet.name}}</p>
-	<p>{{pet.breed}}</p>
+	<p><a href='#/pets/{{pet._id}}'>{{pet.name}}</a> | <a href="#/edit/{{pet._id}}">Edit</a></p>
+
 </div>

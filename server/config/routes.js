@@ -12,7 +12,8 @@ module.exports = function(app) {
   // PET ROUTES
   app.post('/pets', PetController.create);
   app.get('/pets', PetController.index);
-
+  app.get('/pets/:id', PetController.show);
+  app.put('/pets/:id', PetController.update);
   // OWNER ROUTES
   app.post('/owners', OwnerController.create );
 };
