@@ -10,7 +10,8 @@ module.exports = function(app) {
 
   // API ROUTES
   // PET ROUTES
-  app.post('/pets', PetController.create );
+  app.post('/pets', PetController.create);
+  app.get('/pets', PetController.index);
 
   // OWNER ROUTES
   app.post('/owners', OwnerController.create );
